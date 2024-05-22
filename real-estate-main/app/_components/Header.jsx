@@ -44,9 +44,15 @@ function Header() {
               For Rent
             </li>
           </Link>
-          <li className="hover:text-primary font-medium text-sm cursor-pointer">
-            Agent Finder
-          </li>
+          <Link href={'/agentfinder'}>
+            <li
+              className={`'hover:text-primary 
+                 font-medium text-sm cursor-pointer'
+                 ${path == '/agentfinder' && 'text-primary'}`}
+            >
+              Agent Finder
+            </li>
+          </Link>
         </ul>
       </div>
       <div className="flex gap-2 items-center">
